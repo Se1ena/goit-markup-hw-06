@@ -81,7 +81,7 @@
           </button>
         </div>
       </section>
-      <!--Modal windows-->
+      <!--Modal window-->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button data-modal-close class="close-btn" type="button">
@@ -94,6 +94,65 @@
               ></use>
             </svg>
           </button>
+           <!--Form-->
+           <form class="form app-form">
+            <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+            <div class="form-group">
+              <label for="name">Имя</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Имя пользователя"
+                autofocus
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="tel">Телефон</label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="+38 099-999-99-99"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Почта</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="my@mail.com"
+              />
+            </div>
+
+            <div class="form-group comment">
+              <label for="comment">Комментарий</label>
+              <textarea
+                name="comment"
+                id="comment"
+                rows="10"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+
+            <div class="checkbox">
+              <input
+                class="check policy"
+                type="checkbox"
+                name="policy"
+                id="policy"
+              />
+              <label class="check policy-item" for="policy"
+                >Соглашаюсь с рассылкой и принимаю
+                <span>Условия договора</span></label
+              >
+            </div>
+
+            <button type="submit">Отправить</button>
+          </form>
         </div>
       </div>
       <!--Особенности-->
