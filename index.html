@@ -94,8 +94,8 @@
               ></use>
             </svg>
           </button>
-           <!--Form-->
-           <form class="form app-form">
+          <!--Form-->
+          <form class="form app-form">
             <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
             <div class="form-group">
               <label for="name">Имя</label>
@@ -151,7 +151,9 @@
               >
             </div>
 
-            <button type="submit">Отправить</button>
+            <div class="form-btn">
+              <button class="submit-btn" type="submit">Отправить</button>
+            </div>
           </form>
         </div>
       </div>
@@ -542,9 +544,9 @@
         <section class="section-join">
           <div class="footer-icons">
             <p class="join-title">Присоединяйтесь</p>
-            <ul class="social">
+            <ul class="social join-icons">
               <li class="social-links">
-                <a class="link-icon black-icon" aria-level="Instagram" href="">
+                <a class="link-icon black-icon" aria-lebel="Instagram" href="">
                   <svg class="pic">
                     <use href="./images/icons/sprite.svg#icon-instagram"></use>
                   </svg>
@@ -574,6 +576,18 @@
             </ul>
           </div>
         </section>
+        <div class="subscribe">
+          <p class="subs-title">Подпишитесь на рассылку</p>
+          <label for="e-mail"></label>
+          <input
+            class="subs-text"
+            id="e-mail"
+            type="text"
+            name="e-mail"
+            placeholder="E-mail"
+          />
+          <button class="subs-btn" type="submit">Подписаться</button>
+        </div>
       </div>
     </footer>
     <!--Підключення Modal window-->

@@ -66,6 +66,17 @@ html {
   /* Text color form (label) */
   --text-color-label: #757575;
   --text-color-textarea: rgba(117, 117, 117, 0.5);
+
+  /* Text color form-footer */
+  --text-clr-form-footer-p: #FFFFFF;
+
+  /* Background color form (input) */
+  --bgr-color-input: background: #2F303A;
+
+  /* Background color form (button) */
+  --bgr-color-form-button: #2196F3;
+
+
 }
 
 /* цвет основного текста #212121 */
@@ -406,6 +417,11 @@ header {
   height: 11px;
 }
 
+.close-btn:hover,
+.close-btn:focus + svg {
+  fill: var(--acent-color-icons);
+}
+
 /* Form */
 
 .form {
@@ -480,6 +496,39 @@ textarea {
   color: var(--text-color-label);
 }
 
+.checkbox{
+  margin-bottom: 30px;
+}
+
+.submit-btn {
+  
+ 
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+
+  padding: 10px 55px;
+  margin: 0;
+  
+  min-width: 89px;
+
+  background-color: var(--primary-bgc-color-button);
+  color: var(--primary-text-button);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}
+
+.form-btn{
+  display: flex;
+  justify-content: center;
+}
 
 /* Section in index.html and portfolio */
 
@@ -886,6 +935,73 @@ textarea {
 .section-join{
  margin-top: 12px;
 }
+
+.join-icons {
+  margin-top: 20px;
+}
+
+/* Form subscribe */
+
+.subs-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--text-clr-form-footer-p);
+}
+
+.subs-text {
+  width: 358px;
+  height: 50px;
+  padding: 15px 0px 15px 16px;
+  margin: 0;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: var(--bgr-color-input);
+}
+
+.subs-btn {
+  width: 200px;
+  height: 50px;
+
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  flex-wrap: wrap;
+  align-content: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-text-button);
+
+  background-color: var(--bgr-color-form-button);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: #2196F3;
+
+  cursor: pointer;
+}
+
+input .subs-text:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
 /****************************/
 
 /*  для portfolio.html */
