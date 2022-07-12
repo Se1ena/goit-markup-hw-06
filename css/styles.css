@@ -969,6 +969,8 @@ textarea {
 }
 
 .subs-btn {
+  position: relative;
+
   width: 200px;
   height: 50px;
 
@@ -1001,6 +1003,18 @@ input .subs-text:hover {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.subs-icon{
+  position: absolute;
+  top: 13px;
+  bottom: 13px;
+  right: 28px;
+
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+
+  fill: #ffffff;
+}
 
 /****************************/
 
