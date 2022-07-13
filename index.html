@@ -97,39 +97,51 @@
           <!--Form-->
           <form class="form app-form">
             <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+            <label for="name">Имя</label>
             <div class="form-group">
-              <label for="name">Имя</label>
               <input
+                class="form-input"
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Имя пользователя"
+                required
                 autofocus
               />
+              <svg class="form-icon" width="18px" heigth="18px">
+                <use href="./images/icons/sprite.svg#icon-person"></use>
+              </svg>
             </div>
 
+            <label for="tel">Телефон</label>
             <div class="form-group">
-              <label for="tel">Телефон</label>
               <input
+                class="form-input"
                 type="tel"
                 name="tel"
                 id="tel"
-                placeholder="+38 099-999-99-99"
+                required
               />
+              <svg class="form-icon" width="18px" heigth="18px">
+                <use href="./images/icons/sprite.svg#icon-phone"></use>
+              </svg>
             </div>
 
+            <label for="email">Почта</label>
             <div class="form-group">
-              <label for="email">Почта</label>
               <input
+                class="form-input"
                 type="email"
                 name="email"
                 id="email"
-                placeholder="my@mail.com"
+                required
               />
+              <svg class="form-icon" width="18px" heigth="18px">
+                <use href="./images/icons/sprite.svg#icon-email"></use>
+              </svg>
             </div>
 
+            <label for="comment">Комментарий</label>
             <div class="form-group comment">
-              <label for="comment">Комментарий</label>
               <textarea
                 name="comment"
                 id="comment"
@@ -586,7 +598,8 @@
             name="e-mail"
             placeholder="E-mail"
           />
-          <button class="subs-btn" type="submit">Подписаться
+          <button class="subs-btn" type="submit">
+            Подписаться
             <svg class="subs-icon">
               <use href="./images/icons/sprite.svg#icon-airplane"></use>
             </svg>
