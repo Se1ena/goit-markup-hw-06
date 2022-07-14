@@ -75,8 +75,19 @@ html {
 
   /* Background color form (button) */
   --bgr-color-form-button: #2196F3;
+ 
+  /* Form (textarea) */
+ --border-color-textarea: 1px solid rgba(33, 33, 33, 0.2);
+ --border-color-acent: 1px solid #2196F3;
 
+  /* Form (checkbox) */
+ --bgr-color-checkbox:  #2196F3;
+ --checkbox-icon-border: 2px solid black;
+ --checkbox-border-color-checked: #2196F3;
+ --checkbox-bgr-color-checked: #2196F3;
 
+ /* Form (text-label) */
+ --text-color-label: #757575;
 }
 
 /* цвет основного текста #212121 */
@@ -521,7 +532,7 @@ textarea {
   resize: none;
   padding: 12px 16px;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: var(--border-color-textarea);
   border-radius: 4px;
 
   color: inherit;
@@ -530,27 +541,70 @@ textarea {
 
 textarea:hover,
 textarea:focus{
-  border: 1px solid #2196F3;
+  border: var(--border-color-acent);
 }
 
 .form-group.comment{
   margin-bottom: 20px;
 }
 
-.policy-item {
-  margin-left: 7px;
 
-  font-weight: 400;
+
+.checkbox{
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-policy{
+  /*-webkit-appearance: none;
+  -moz-appearanse:none;
+  appearance: none;
+
+  position:absolute;*/
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-label{
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 
   color: var(--text-color-label);
 }
 
-.checkbox{
-  margin-bottom: 30px;
+.checkbox-link{
+ color:var(--bgr-color-checkbox);
 }
+
+.policy-icon{
+  display: block;
+  width: 16px;
+  height: 15px;
+
+  margin-right: 8px;
+
+  border: var(--checkbox-icon-border);
+  border-radius: 2px;
+}
+
+.check-policy:checked + .policy-icon{
+  border-color: var(--checkbox-border-color-checked);
+  background-color: var(--checkbox-bgr-color-checked);
+  background-image: url(../images/icons/full-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
 
 .submit-btn {
   transition-property: background-color;
