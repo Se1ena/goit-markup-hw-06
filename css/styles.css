@@ -301,7 +301,7 @@ header {
   background-size: cover;
 }
 
-.hero .title {
+.hero .hero-title {
   display: block;
 
   color: var(--hero-text-color);
@@ -314,7 +314,7 @@ header {
   text-transform: uppercase;
 }
 
-.hero-container h1 {
+.hero-title{
   margin-bottom: 30px;
 }
 
